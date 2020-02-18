@@ -1,20 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Stone Keeper
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="music">
+        <ion-label>GALLERY</ion-label>
+        <ion-icon name="image"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="movies">
+        <ion-icon name="add-circle"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="games">
+        <ion-label>COLLECTIONS</ion-label>
+        <ion-icon name="images"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
